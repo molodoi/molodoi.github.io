@@ -1,0 +1,63 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import SocialsLink from "./SocialsLink.astro";
+import SvgDownload from "./svg/SvgDownload.astro";
+import SvgInfoCircle from "./svg/SvgInfoCircle.astro";
+import { Image } from "astro:assets";
+import Me from "../assets/me.jpg";
+---
+
+<section
+    id="hello"
+    class="bg-blue-50 dark:bg-slate-950 text-gray-600 body-font relative"
+>
+    <div
+        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+    >
+        <div
+            class="order-last md:order-first md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+        >
+            <div
+                class="origin-bottom -rotate-2 text-xl text-white py-1 px-3 bg-blue-500 mb-4"
+            >
+                Hey there! I'm -
+            </div>
+            <h1
+                class="title-font text-6xl mb-4 font-bold bg-gradient-to-r from-blue-500 to-blue-400 inline-block text-transparent bg-clip-text"
+            >
+                Matthieu Lamerant
+            </h1>
+            <p
+                class="mb-6 leading-loose text-lg font-bold text-blue-950 dark:text-gray-400"
+            >
+                Développeur Web PHP and more
+            </p>
+            <div class="mb-2">
+                <HeaderLink
+                    href="/about"
+                    class="inline-flex items-center text-blue-500 dark:text-blue-500 border border-blue-500 py-2 px-6 mb-2 mr-0 lg:mr-1 lg:mb-0 rounded-xl text-lg focus:outline-none hover:text-blue-600 hover:border-blue-600 hover:shadow-lg ease-in-out duration-100"
+                >
+                    <span>A propos</span>
+                    <SvgInfoCircle />
+                </HeaderLink>
+                <HeaderLink
+                    href="/about"
+                    class="inline-flex items-center font-light text-lg text-gray-900 border-gray-900 dark:text-gray-300 border dark:border-gray-300 py-2 px-6 rounded-xl focus:outline-none hover:text-gray-950 hover:border-gray-950 hover:shadow-lg ease-in-out duration-100"
+                >
+                    <span>Download CV</span>
+                    <SvgDownload />
+                </HeaderLink>
+            </div>
+            <SocialsLink />
+        </div>
+        <div
+            class="md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-end md:text-left mb-16 md:mb-0 items-center text-center"
+        >
+            <Image
+                class="border-8 border-white rounded-full shadow-2xl object-cover object-center"
+                alt="Lamerant Matthieu - Ticme.fr"
+                src={Me}
+            />
+        </div>
+    </div>
+</section>

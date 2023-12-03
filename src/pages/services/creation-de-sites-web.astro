@@ -1,0 +1,205 @@
+---
+import ContactSection from "../../components/ContactSection.astro";
+import ThemeLayout from "../../layouts/ThemeLayout.astro";
+import { Image } from "astro:assets";
+import Cms from "../../assets/ticme-expert-cms-wordpress-drupal-autres.png";
+import UxUiDesign from "../../assets/maquette-ux-ui-design-ticme.png";
+import Developpement from "../../assets/developpement-cms-ticme-expert-php.png";
+import Integration from "../../assets/integration-contenu-site-web-ticme-expert-cms-wordpress-drupal-autres-cms.png";
+import Livraison from "../../assets/livraison-projet-web-ticme-expert-php.png";
+---
+
+<ThemeLayout
+    title={"Création de sites web - Ticme"}
+    description={"Vous recherchez un expert pour votre projet web, votre vitrine d'entreprise ou votre site institutionnel. Vous êtes au bon endroit! Ticme vous propose des outils basés sur des solutions CMS solides, évolutives, maintenables et éprouvées du type WordPress, Drupal et plus encore.."}
+>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-14 mx-auto">
+            <div class="flex flex-col w-full mb-20">
+                <div class="mb-6">
+                    <h2
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Création de site web
+                    </h2>
+                    <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                </div>
+                <p
+                    class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                >
+                    Vous recherchez un expert pour votre projet web, votre
+                    vitrine d'entreprise ou votre site institutionnel. Vous êtes
+                    au bon endroit! Ticme vous propose des outils basés sur des
+                    solutions CMS solides, évolutives, maintenables et éprouvées
+                    du type WordPress, Drupal et plus encore..
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="h-max mx-auto">
+                    <Image
+                        class="mb-4 p-10 bg-blue-200 dark:bg-blue-900 rounded-2xl"
+                        src={Cms}
+                        alt="ticme expert cms wordpress drupal"
+                    />
+                </div>
+                <div class="flex flex-col justify-center lg:p-10">
+                    <h3
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Qu’est-ce qu’un CMS ?
+                    </h3>
+                    <p
+                        class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        Un CMS, ou système de gestion de contenu, est un outil
+                        qui vous permet de gérer le contenu de votre site de
+                        manière indépendante. WordPress est flexible, hautement
+                        personnalisable, super convivial et un excellent système
+                        de gestion de contenu (CMS), reconnu et éprouvé.
+                        <br />
+                        <br />
+                        En propulsant votre projet web à l'aide d'un CMS vous augmentez
+                        la durée de vie de votre site internet, car vous pourrez
+                        à tout moment : ajouter, modifier et travailler vos contenus
+                        pour le référencement, gérer et paramétrer votre outil au
+                        millimètre et même ajouter de nouvelles fonctionnalités.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col w-full my-10 md:my-20">
+                <div class="flex flex-col items-center mb-6">
+                    <h2
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Étapes de conception d'un site internet
+                    </h2>
+                    <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                </div>
+                <p
+                    class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                >
+                    Je vous accompagne dans la conception de votre projet web,
+                    de la maquette en passant par l'intégration de vos contenu
+                    et produits jusqu'à la mise en ligne sur votre hébergement.
+                    Soit 4 étapes et 3 validations avant la livraison!
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10">
+                <div class="flex flex-col justify-center">
+                    <h3
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Préparation, UX/UI et Design
+                    </h3>
+                    <p
+                        class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        Suite à l'étude de votre demande et de vos besoins. Nous
+                        préparons un cahier des charges, détaillons les taĉhes à
+                        effectuer puis maquettons les prémices de votre
+                        application sur nos serveurs pour que vous puissez
+                        consulter l'avancée de votre projet en temps réel.
+                    </p>
+                </div>
+                <div class="h-max mx-auto">
+                    <Image
+                        class="mb-4 p-10 bg-blue-200 dark:bg-blue-900 rounded-2xl"
+                        src={UxUiDesign}
+                        alt="maquette ui ux design web ticme"
+                    />
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10">
+                <div class="h-max mx-auto">
+                    <Image
+                        class="mb-4 p-10 bg-blue-200 dark:bg-blue-900 rounded-2xl"
+                        src={Developpement}
+                        alt="ticme expert cms wordpress drupal"
+                    />
+                </div>
+                <div
+                    class="flex flex-col justify-center order-first md:order-none lg:p-10"
+                >
+                    <h3
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Développement
+                    </h3>
+                    <p
+                        class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        En fonction du cahier des charges, nous développons les
+                        différentes parties et fonctionnalités de votre site
+                        e-commerce
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10">
+                <div class="flex flex-col justify-center">
+                    <h3
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Intégration
+                    </h3>
+                    <p
+                        class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        Nous préparons et intégrons le contenu (textes, images,
+                        vidéos). A cet instant, nous validerons ensemble les
+                        derniers paramètres avant livraison.
+                    </p>
+                </div>
+                <div class="h-max mx-auto">
+                    <Image
+                        class="mb-4 p-10 bg-blue-200 dark:bg-blue-900 rounded-2xl"
+                        src={Integration}
+                        alt="integration contenu site web ticme expert cms wordpress drupal autres CMS"
+                    />
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10">
+                <div class="h-max mx-auto">
+                    <Image
+                        class="mb-4 p-10 bg-blue-200 dark:bg-blue-900 rounded-2xl"
+                        src={Livraison}
+                        alt="ticme expert cms wordpress drupal"
+                    />
+                </div>
+                <div
+                    class="flex flex-col justify-center order-first md:order-none p-0 lg:p-10"
+                >
+                    <h3
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Livraison
+                    </h3>
+                    <p
+                        class="text-lg font-light leading-loose text-justify whitespace-normal text-blue-950 dark:text-gray-300"
+                    >
+                        Nous préparons, sécurisons et optimisons votre serveur
+                        puis effectuons la livraison de votre projet.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col w-full mt-20">
+                <div class="flex flex-col items-center mb-6">
+                    <h2
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Voilà c'est fini : votre site est en ligne !
+                    </h2>
+                    <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                </div>
+                <p
+                    class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                >
+                    Vous êtes maintenant propriétaire de votre site internet
+                    totalement sur-mesure, personnalisé, rapide, optimisé pour
+                    le référencement, compatible avec tous les supports
+                    (web&mobile) et surtout sécurisé.
+                </p>
+            </div>
+        </div>
+    </section>
+    <ContactSection />
+</ThemeLayout>

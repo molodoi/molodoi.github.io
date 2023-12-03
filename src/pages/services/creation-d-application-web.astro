@@ -1,0 +1,212 @@
+---
+import ContactSection from "../../components/ContactSection.astro";
+import ThemeLayout from "../../layouts/ThemeLayout.astro";
+import { Image } from "astro:assets";
+import AppWeb from "../../assets/application-web-ticme-symfony-laravel-react-vuejs-nextjs-nuxt-nestjs.png";
+import UxUiDesign from "../../assets/maquette-ux-ui-design-ticme.png";
+import Integration from "../../assets/integration-continue-application-web-ticme-symfony-laravel-react-vuejs-nextjs-nuxt-nestjs.png";
+import Development from "../../assets/developpement-application-web-ticme-symfony-laravel-react-vuejs-nextjs-nuxt-nestjs.png";
+import Livraison from "../../assets/livraison-integration-continue-application-web-ticme-symfony-laravel-react-vuejs-nextjs-nuxt-nestjs.png";
+---
+
+<ThemeLayout
+    title={"Création d'application web - Ticme"}
+    description={"Vous recherchez un expert pour votre projet web capable de s'adapter à des logique métier complexe dépassant les capacités des CMS classiques ou encore pour le développement de vos API sur-mesure. Vous êtes au bon endroit! Ticme vous propose des solutions basés sur les frameworks les plus solides, maintenables et éprouvées du web du type Laravel, Symfony et plus encore.."}
+>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-14 mx-auto">
+            <div class="flex flex-col w-full mb-10">
+                <div class="mb-6">
+                    <h2
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Création d'application web
+                    </h2>
+                    <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                </div>
+                <p
+                    class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                >
+                    Vous recherchez un expert pour votre projet web capable de
+                    s'adapter à des logique métier complexe dépassant les
+                    capacités des CMS classiques ou encore pour le développement
+                    de vos API sur-mesure. Vous êtes au bon endroit! Ticme vous
+                    propose des solutions basés sur les frameworks les plus
+                    solides, maintenables et éprouvées du web du type Laravel,
+                    Symfony et plus encore..
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="h-max mx-auto">
+                    <Image
+                        class="mb-4 p-10 bg-blue-200 dark:bg-blue-900 rounded-2xl"
+                        src={AppWeb}
+                        width="500"
+                        height="500"
+                        loading="lazy"
+                        sizes="100vw"
+                        srcset={`${AppWeb} 500w, ${AppWeb} 800w`}
+                        alt="application web symfony laravel react vuejs nextjs nuxt nestjs ticme"
+                    />
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h3
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Frameworks quezako?
+                    </h3>
+                    <p
+                        class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        Le développement d’applications web est une tâche
+                        relativement complexe et longue. L’utilisation d’un
+                        framework, cadre de travail et boite à outils, a pour
+                        objectif d’aider les développeurs à construire des
+                        projets sur-mesure complexes, qui ne peuvent être
+                        réalisés avec les CMS classiques (WordPress, etc..). Les
+                        frameworks Laravel et Symfony sont les 2 frameworks les
+                        plus populaires. Ils sont basés sur le language PHP,
+                        language qui représente encore aujourd'hui plus de 80%
+                        des sites et applications web en 2024.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col w-full my-10">
+                <div class="flex flex-col items-center mb-6">
+                    <h2
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Étapes de conception d'une application web
+                    </h2>
+                    <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                </div>
+                <p
+                    class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                >
+                    Je vous accompagne dans la conception de votre projet
+                    d'application web, de la maquette en passant par
+                    l'intégration de vos contenu jusqu'à la mise en ligne sur
+                    votre hébergement. Soit 4 étapes et 3 validations avant la
+                    livraison!
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10">
+                <div class="flex flex-col justify-center">
+                    <h3
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Préparation, UX/UI et Design
+                    </h3>
+                    <p
+                        class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        Suite à l'étude de votre demande et de vos besoins. Nous
+                        préparons un cahier des charges, détaillons les taĉhes à
+                        effectuer puis maquettons les prémices de votre
+                        application sur nos serveurs pour que vous puissez
+                        consulter l'avancée de votre projet en temps réel.
+                    </p>
+                </div>
+                <div class="h-max mx-auto">
+                    <Image
+                        class="mb-4 p-10 bg-blue-200 dark:bg-blue-900 rounded-2xl"
+                        src={UxUiDesign}
+                        alt="maquette ui ux design web ticme"
+                    />
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10">
+                <div class="h-max mx-auto">
+                    <Image
+                        class="mb-4 p-10 bg-blue-200 dark:bg-blue-900 rounded-2xl"
+                        src={Integration}
+                        alt="CI/CD, integration continue et deploiement d'application web ticme"
+                    />
+                </div>
+                <div
+                    class="flex flex-col justify-center order-first md:order-none"
+                >
+                    <h3
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Intégration continue
+                    </h3>
+                    <p
+                        class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        Agile, nous mettons en place une liste des
+                        fonctionnalités attendues planifiées en sprints (de 2 à
+                        4 semaines).
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10">
+                <div class="flex flex-col justify-center">
+                    <h3
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Développement
+                    </h3>
+                    <p
+                        class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        Ensuite, nous sélectionnons dans la liste les
+                        différentes parties et fonctionnalités de votre
+                        application à développer par lots.
+                    </p>
+                </div>
+                <div class="h-max mx-auto">
+                    <Image
+                        class="mb-4 p-10 bg-blue-200 dark:bg-blue-900 rounded-2xl"
+                        src={Development}
+                        alt="developpement d'application ticme symfony laravel react nextjs vuejs nuxt"
+                    />
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10">
+                <div class="h-max mx-auto">
+                    <Image
+                        class="mb-4 p-10 bg-blue-200 dark:bg-blue-900 rounded-2xl"
+                        src={Livraison}
+                        alt="livraison projet e-commerce ticme expert e-commerce"
+                    />
+                </div>
+                <div
+                    class="flex flex-col justify-center order-first md:order-none"
+                >
+                    <h3
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Livraison
+                    </h3>
+                    <p
+                        class="text-lg font-light leading-loose text-justify whitespace-normal text-blue-950 dark:text-gray-300"
+                    >
+                        Nous livrons les différentes parties et fonctionnalités
+                        de manières itératives, lot par lot, sprint après
+                        sprint, jusqu'à la livraison finale.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col w-full my-10">
+                <div class="flex flex-col items-center mb-6">
+                    <h2
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Voilà c'est fini : votre application est en ligne !
+                    </h2>
+                    <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                </div>
+                <p
+                    class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                >
+                    Vous êtes maintenant propriétaire de votre application
+                    totalement sur-mesure, rapide, optimisé pour le
+                    référencement, compatible avec tous les supports
+                    (web&mobile) et surtout sécurisé.
+                </p>
+            </div>
+        </div>
+    </section>
+    <ContactSection />
+</ThemeLayout>

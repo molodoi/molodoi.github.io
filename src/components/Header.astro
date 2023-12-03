@@ -1,0 +1,58 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import ThemeIcon from "./ThemeIcon.astro";
+import { Image } from "astro:assets";
+import Logo from "../assets/flower-ticme.webp";
+---
+
+<header id="top" class="text-gray-600 body-font">
+    <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+    >
+        <div class="flex justify-between">
+            <HeaderLink href="/" class="mr-5 font-bold">
+                <Image
+                    class="object-cover object-center w-12 h-12"
+                    alt="Logo Ticme.fr"
+                    src={Logo}
+                />
+            </HeaderLink>
+        </div>
+        <nav
+            class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+        >
+            <HeaderLink
+                href="/"
+                class="mr-5 font-bold text-gray-400 hover:text-blue-600 transition-colors ease-in-out"
+            >
+                Home
+            </HeaderLink>
+            <HeaderLink
+                href="/about"
+                class="mr-5 font-bold text-gray-400 hover:text-blue-600 transition-colors ease-in-out"
+            >
+                A propos
+            </HeaderLink>
+            <HeaderLink
+                href="/services"
+                class="mr-5 font-bold text-gray-400 hover:text-blue-600 transition-colors ease-in-out"
+            >
+                Services
+            </HeaderLink>
+            <HeaderLink
+                href="/projects"
+                class="mr-5 font-bold text-gray-400 hover:text-blue-600 transition-colors ease-in-out"
+            >
+                Projets
+            </HeaderLink>
+
+            <HeaderLink
+                href="/blog"
+                class="mr-5 font-bold text-gray-400 hover:text-blue-600 transition-colors ease-in-out"
+            >
+                Blog
+            </HeaderLink>
+            <ThemeIcon />
+        </nav>
+    </div>
+</header>

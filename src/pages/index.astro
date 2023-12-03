@@ -1,0 +1,23 @@
+---
+import HelloHero from "../components/HelloHero.astro";
+import AboutSection from "../components/AboutSection.astro";
+import BlogSection from "../components/BlogSection.astro";
+import ProjectsSection from "../components/ProjectsSection.astro";
+import ThemeLayout from "../layouts/ThemeLayout.astro";
+import ServicesSection from "../components/ServicesSection.astro";
+import SkillsSection from "../components/SkillsSection.astro";
+import ContactSection from "../components/ContactSection.astro";
+---
+
+<ThemeLayout
+    title={"Ticme.fr - Micro Agence Web expert PHP (Laravel/Symfony), Javascript (React, Vue, Angular), Mobile (React Native), CMS (Wordpress et autres), e-commerce(WooCommerce)"}
+    description={"Un développeur à votre disposition pour réaliser vos applications web et mobiles, vos plates-formes e-commerce au plus proche de vos besoins, dans le respect de l'état de l'art et des bonnes pratiques de l'industrie du digital."}
+>
+    <HelloHero />
+    <AboutSection />
+    <!-- <BlogSection /> -->
+    <SkillsSection />
+    <ServicesSection />
+    <ProjectsSection />
+    <ContactSection />
+</ThemeLayout>

@@ -1,0 +1,286 @@
+---
+import SvgLocationPin from "./svg/SvgLocationPin.astro";
+import { Image } from "astro:assets";
+import Ticme from "../assets/flower-ticme.webp";
+import GoAndLive from "../assets/go-and-live-rodez.webp";
+import Ibm from "../assets/ibm-logo.webp";
+import Lille from "../assets/ulille.webp";
+import Ovh from "../assets/ovh.webp";
+import Paf from "../assets/adictiz.webp";
+import Enaco from "../assets/enaco.webp";
+import Epsm from "../assets/logo-epsm.webp";
+---
+
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-10 mx-auto">
+        <div class="flex flex-col w-full mb-10">
+            <div class="mb-6">
+                <h2
+                    class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                >
+                    Expériences
+                </h2>
+                <div class="h-1 w-20 bg-blue-500 rounded"></div>
+            </div>
+            <p
+                class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+            >
+                Mes expériences les plus significatives en entreprise.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div
+                class="group mb-4 text-blue-950 dark:text-gray-300 text-center border border-blue-950 dark:border-gray-300 rounded-lg p-6"
+            >
+                <div class="flex items-center justify-center p-8">
+                    <Image
+                        class="rounded-lg w-48 h-48 object-contain object-center sm:mb-0 bg-white p-6 group-hover:-translate-y-2 ease-in duration-200"
+                        src={Ticme}
+                        alt="Logo Ticme.fr - Développeur web full stack - PHP (Symfony/Laravel), Javascript (Vanilla, React, VueJs, Angular, Node), Mobile (React Native), CMS (Wordpress, WooCommerce, Drupal)"
+                        width={128}
+                        height={128}
+                    />
+                </div>
+                <h2 class="text-xl uppercase">Ticme</h2>
+                <div class="inline-flex items-center justify-center text-sm">
+                    <SvgLocationPin />Treignac
+                </div>
+                <h3 class="font-medium">Développeur web</h3>
+                <h4 class="text-sm mb-2">Juin 2021 - aujourd’hui</h4>
+                <p class="font-light leading-loose">
+                    Laravel/Symfony<br />HTML5/CSS/SASS, Flexbox/Grid,
+                    JavaScript
+                </p>
+                <p class="font-light leading-loose">
+                    React/Next, Vuejs/Nuxt, React Native
+                </p>
+                <p class="font-light leading-loose mb-4">
+                    Wordpress et autres conception graphique
+                </p>
+            </div>
+            <div
+                class="group mb-4 text-blue-950 dark:text-gray-300 text-center border border-blue-950 dark:border-gray-300 rounded-lg p-6"
+            >
+                <div class="flex items-center justify-center p-8">
+                    <Image
+                        class="rounded-lg w-48 h-48 object-contain object-center sm:mb-0 bg-white p-6 group-hover:-translate-y-2 ease-in duration-200"
+                        src={GoAndLive}
+                        alt="Logo Go&Live : spécialiste des voyages scolaires et des séjours linguistiques"
+                        width={128}
+                        height={128}
+                    />
+                </div>
+                <h2 class="text-xl uppercase">GO&LIVE</h2>
+                <div class="inline-flex items-center justify-center text-sm">
+                    <SvgLocationPin />Montpellier/Rodez
+                </div>
+                <h3 class="font-medium">Développeur web</h3>
+                <h4 class="text-sm mb-2">Novembre 2017 à Février 2021*</h4>
+                <p class="font-light leading-loose">
+                    Refondre, développer et maintenir les sites du groupe
+                    Go&Live sous Laravel :<br />
+                    <a
+                        href="https://www.nacel.fr/"
+                        target="_blank"
+                        class="text-blue-500">Nacel</a
+                    >, <a
+                        href="https://www.clc.fr/"
+                        target="_blank"
+                        class="text-blue-500">CLC</a
+                    >, <a
+                        href="https://www.sportselitejeunes.fr/"
+                        target="_blank"
+                        class="text-blue-500">SEJ</a
+                    >, <a
+                        href="https://www.americanvillage.fr/"
+                        target="_blank"
+                        class="text-blue-500">American Village</a
+                    >, <a
+                        href="https://www.sans-frontieres.fr/"
+                        target="_blank"
+                        class="text-blue-500">Sans frontières</a
+                    >.
+                </p>
+                <p class="font-light text-sm italic">
+                    * Licenciement économique suite à l'impact de la crise
+                    sanitaire sur le secteur du tourisme..
+                </p>
+            </div>
+            <div
+                class="group mb-4 text-blue-950 dark:text-gray-300 text-center border border-blue-950 dark:border-gray-300 rounded-lg p-6"
+            >
+                <div class="flex items-center justify-center p-8">
+                    <Image
+                        class="rounded-lg w-48 h-48 object-contain object-center sm:mb-0 bg-white p-6 group-hover:-translate-y-2 ease-in duration-200"
+                        src={Ibm}
+                        alt="Logo IBM Client Innovation Center"
+                    />
+                </div>
+                <h2 class="text-xl uppercase">IBM</h2>
+                <div class="inline-flex items-center justify-center text-sm">
+                    <SvgLocationPin />Lille Euratechnologie/Paris
+                </div>
+                <h3 class="font-medium">Développeur web</h3>
+                <h4 class="text-sm mb-2">Novembre 2016 - Août 2017</h4>
+                <p class="font-light leading-loose">
+                    Nutrixo "Grands Moulins de Paris" : <br />Magento 2/Symfony
+                    - Paris
+                </p>
+                <p class="font-light leading-loose mb-4">
+                    IBM Watson : Node, Angular 2, Data - Lille Euratechnologie
+                </p>
+            </div>
+            <div
+                class="group mb-4 text-blue-950 dark:text-gray-300 text-center border border-blue-950 dark:border-gray-300 rounded-lg p-6"
+            >
+                <div class="flex items-center justify-center p-8">
+                    <Image
+                        class="rounded-lg w-48 h-48 object-contain object-center sm:mb-0 bg-white p-6 group-hover:-translate-y-2 ease-in duration-200"
+                        src={Lille}
+                        alt="Logo Université Sciences et Technologies de Lille"
+                    />
+                </div>
+                <h2 class="text-xl uppercase">USTL Lille 1</h2>
+                <div class="inline-flex items-center justify-center text-sm">
+                    <SvgLocationPin />Villeneuve d’Ascq
+                </div>
+                <h3 class="font-medium">Formateur Web</h3>
+                <h4 class="text-sm mb-2">Octobre 2010 - Mars 2011</h4>
+                <p class="font-light leading-loose">
+                    Former à la programmation web avec PHP 16 étudiants de
+                    deuxième année de DEUST - BAC+2
+                </p>
+                <a
+                    href="https://sciences-technologies.univ-lille.fr/"
+                    target="_blank"
+                    class="text-blue-500">USTL</a
+                >
+            </div>
+            <div
+                class="group mb-4 text-blue-950 dark:text-gray-300 text-center border border-blue-950 dark:border-gray-300 rounded-lg p-6"
+            >
+                <div class="flex items-center justify-center p-8">
+                    <Image
+                        class="rounded-lg w-48 h-48 object-contain object-center sm:mb-0 bg-white p-6 group-hover:-translate-y-2 ease-in duration-200"
+                        src={Ovh}
+                        alt="OVH - Hébergeur et fournisseur de services Cloud"
+                    />
+                </div>
+                <h2 class="text-xl uppercase">OVH</h2>
+                <div class="inline-flex items-center justify-center text-sm">
+                    <SvgLocationPin />Roubaix
+                </div>
+                <h3 class="font-medium">Développeur web</h3>
+                <h4 class="text-sm mb-2">Octobre 2009 - Mars 2010</h4>
+                <p class="font-light leading-loose">
+                    UX/UI Designer, Webmaster (cloud manager, ovh.com, ovh.biz,
+                    soyoustart.com)
+                </p>
+                <p class="font-light leading-loose">
+                    Intégrateur (HTML, CSS, JS/Jquery, XML/XSLT)
+                </p>
+                <p class="font-light text-center">
+                    <a
+                        href="https://www.ovhcloud.com/"
+                        target="_blank"
+                        class="text-blue-500">OVH</a
+                    >
+                </p>
+            </div>
+            <div
+                class="group mb-4 text-blue-950 dark:text-gray-300 text-center border border-blue-950 dark:border-gray-300 rounded-lg p-6"
+            >
+                <div class="flex items-center justify-center p-8">
+                    <Image
+                        class="rounded-lg w-48 h-48 object-contain object-center sm:mb-0 bg-white group-hover:-translate-y-2 ease-in duration-200"
+                        src={Paf}
+                        alt="Adictiz plateforme de gamification"
+                    />
+                </div>
+                <h2 class="text-xl uppercase">Adictiz</h2>
+                <div class="inline-flex items-center justify-center text-sm">
+                    <SvgLocationPin />Lille Euratechnologie
+                </div>
+                <h3 class="font-medium">Développeur web</h3>
+                <h4 class="text-sm mb-2">Février - Mai 2009</h4>
+                <p class="font-light leading-loose">
+                    Développement backend PHP du jeu PAF LE CHIEN, outils
+                    d’analyses et statistiques, API Facebook,
+                    internationalisation, programme affiliation OPODO partner.
+                </p>
+                <p class="font-light text-center">
+                    <a
+                        href="https://www.adictiz.com/"
+                        target="_blank"
+                        class="text-blue-500">ADICTIZ</a
+                    >
+                </p>
+            </div>
+            <div
+                class="group mb-4 text-blue-950 dark:text-gray-300 text-center border border-blue-950 dark:border-gray-300 rounded-lg p-6"
+            >
+                <div class="flex items-center justify-center p-8">
+                    <Image
+                        alt="Enaco.fr - École de commerce en ligne"
+                        class="rounded-lg w-48 h-48 object-contain object-center sm:mb-0 bg-white group-hover:-translate-y-2 ease-in duration-200"
+                        src={Enaco}
+                    />
+                </div>
+                <h2 class="text-xl uppercase">Enaco</h2>
+                <div class="inline-flex items-center justify-center text-sm">
+                    <SvgLocationPin />Lille Euratechnologie
+                </div>
+                <h3 class="font-medium">Stage Développeur web</h3>
+                <h4 class="text-sm mb-2">Licence Pro T2I (Bac+3) 2009</h4>
+                <p class="font-light leading-loose">
+                    Développement sur l’outil interne de gestion de relation
+                    client (PHP5/MySQL)
+                </p>
+                <p class="font-light leading-loose">
+                    Développement d’une plateforme de e-learning (Symfony 1.4)
+                </p>
+                <p class="font-light text-center">
+                    <a
+                        href="https://www.enaco.fr/"
+                        target="_blank"
+                        class="text-blue-500">ENACO</a
+                    >
+                </p>
+            </div>
+            <div
+                class="group mb-4 text-blue-950 dark:text-gray-300 text-center border border-blue-950 dark:border-gray-300 rounded-lg p-6"
+            >
+                <div class="flex items-center justify-center p-8">
+                    <Image
+                        class="rounded-lg w-48 h-48 object-contain object-center sm:mb-0 bg-white group-hover:-translate-y-2 ease-in duration-200"
+                        src={Epsm}
+                        alt="EPSM - Établissement Public de Santé Mentale"
+                    />
+                </div>
+                <h2 class="text-xl uppercase">EPSM des Flandres</h2>
+                <div class="inline-flex items-center justify-center text-sm">
+                    <SvgLocationPin />Bailleul
+                </div>
+                <h3 class="font-medium">Stage Développeur web</h3>
+                <h4 class="text-sm mb-2">DEUST (Bac+2) 2008</h4>
+                <p class="font-light leading-loose mb-2">
+                    Développement d’une plateforme de ticketing (PHP/Mysql)
+                </p>
+                <h2 class="text-xl uppercase">EPSM Lille Métropole</h2>
+                <div class="inline-flex items-center justify-center text-sm">
+                    <SvgLocationPin />Armentières
+                </div>
+                <h3 class="font-medium">
+                    Stage Technicien Mainteance et Réseau
+                </h3>
+                <h4 class="text-sm mb-2">TEMIR 2006</h4>
+                <p class="font-light leading-loose">
+                    Maintenance, support, dépannage, serveurs et sécurité.
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-row md:hidden">
+            <span class="h-[1px] w-20 bg-gray-300 rounded mt-8 mx-auto"></span>
+        </div>
+    </div>
+</section>

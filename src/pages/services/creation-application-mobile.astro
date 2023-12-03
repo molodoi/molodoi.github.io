@@ -1,0 +1,210 @@
+---
+import ContactSection from "../../components/ContactSection.astro";
+import HeaderLink from "../../components/HeaderLink.astro";
+import ThemeLayout from "../../layouts/ThemeLayout.astro";
+import { Image } from "astro:assets";
+import AppMobile from "../../assets/creation-application-mobile-react-native-ticme.png";
+import UxUiDesign from "../../assets/maquette-ux-ui-design-ticme.png";
+import Development from "../../assets/developpement-application-mobile-react-native-ticme.png";
+import Integration from "../../assets/integration-application-mobile-react-native-ticme.png";
+import Livraison from "../../assets/livraison-application-mobile-react-native-ticme.png";
+---
+
+<ThemeLayout
+    title={"Création d'application mobile - Ticme"}
+    description={"Vous recherchez un expert pour votre projet d'application mobile. Vous êtes au bon endroit! Ticme vous propose des outils basés sur des solutions hybrides ou natives reconnues du type ReactNative."}
+>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-14 mx-auto">
+            <div class="flex flex-col w-full mb-10">
+                <div class="mb-6">
+                    <h2
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Création d'application mobile
+                    </h2>
+                    <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                </div>
+                <p
+                    class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                >
+                    Vous recherchez un expert pour réaliser votre projet
+                    d'application mobile. Vous êtes au bon endroit! <br />Ticme
+                    vous propose des outils basés sur des solutions hybrides ou
+                    natives reconnues du type ReactNative.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="p-10 bg-blue-200 rounded-2xl h-max mx-auto">
+                    <Image
+                        class="mb-4"
+                        src={AppMobile}
+                        alt="création application mobile react native ticme"
+                    />
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h3
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Appli Mobile avec ReactNative?
+                    </h3>
+                    <p
+                        class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        React Native est un framework d'applications mobiles
+                        open source créé par Facebook. Il est utilisé pour
+                        développer des applications pour Android, iOS en
+                        permettant aux développeurs d’utiliser React pour
+                        intéragir avec les fonctionnalités natives de ces
+                        plateformes.
+                        <br />
+                        <br />
+                        React Native est utilisé dans des milliers d'applications,
+                        mais il est probable que vous l'ayez déjà utilisé dans l'une
+                        de ces applications : <HeaderLink
+                            href="https://reactnative.dev/showcase"
+                            target={`_blank`}
+                            rel="noreferrer"
+                            class="font-light text-blue-950 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-600 text-lg focus:outline-none ease-in duration-100"
+                        >
+                            https://reactnative.dev/showcase
+                        </HeaderLink>
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col w-full my-10">
+                <div class="flex flex-col items-center mb-6">
+                    <h2
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Étapes de conception d'application mobile
+                    </h2>
+                    <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                </div>
+                <p
+                    class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                >
+                    Je vous accompagne dans la conception de votre projet
+                    mobile, de la maquette en passant par l'intégration de vos
+                    contenu jusqu'à la mise en ligne sur votre hébergement. Soit
+                    4 étapes et 3 validations avant la livraison!
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10">
+                <div class="flex flex-col justify-center">
+                    <h3
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        PRÉPARATION, UX/UI ET DESIGN
+                    </h3>
+                    <p
+                        class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        Suite à l'étude de votre demande et de vos besoins. Nous
+                        préparons un cahier des charges, détaillons les taĉhes à
+                        effectuer puis maquettons les prémices de votre
+                        application sur nos serveurs pour que vous puissez
+                        consulter l'avancée de votre projet en temps réel.
+                    </p>
+                </div>
+                <div class="p-10 bg-blue-200 rounded-2xl h-max mx-auto">
+                    <Image
+                        class="mb-4"
+                        src={UxUiDesign}
+                        alt="maquette ui ux design web ticme"
+                    />
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10">
+                <div class="p-10 bg-blue-200 rounded-2xl h-max mx-auto">
+                    <Image
+                        class="mb-4"
+                        src={Development}
+                        alt="développement d'application mobile avec react native ticme"
+                    />
+                </div>
+                <div
+                    class="flex flex-col justify-center order-first md:order-none"
+                >
+                    <h3
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Développement
+                    </h3>
+                    <p
+                        class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        Suite à cette réflexion, nous développons les
+                        différentes parties de votre application mobile pour iOS
+                        et Android.
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10">
+                <div class="flex flex-col justify-center">
+                    <h3
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Intégration
+                    </h3>
+                    <p
+                        class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        Nous préparons et intégrons les premiers contenus
+                        (textes, images, vidéos). A cet instant, nous validerons
+                        ensemble les derniers paramètres avant livraison.
+                    </p>
+                </div>
+                <div class="p-10 bg-blue-200 rounded-2xl h-max mx-auto">
+                    <Image
+                        class="mb-4"
+                        src={Integration}
+                        alt="integration d'application mobile avec react native ticme"
+                    />
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10">
+                <div class="p-10 bg-blue-200 rounded-2xl h-max mx-auto">
+                    <Image
+                        class="mb-4"
+                        src={Livraison}
+                        alt="livraison d'application mobile react native ticme"
+                    />
+                </div>
+                <div
+                    class="flex flex-col justify-center order-first md:order-none"
+                >
+                    <h3
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Livraison
+                    </h3>
+                    <p
+                        class="text-lg font-light leading-loose text-justify whitespace-normal text-blue-950 dark:text-gray-300"
+                    >
+                        Nous préparons l'application puis effectuons la
+                        livraison de votre projet sur les stores.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col w-full my-10">
+                <div class="flex flex-col items-center mb-6">
+                    <h2
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Voilà c'est fini : votre application mobile est en ligne
+                        !
+                    </h2>
+                    <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                </div>
+                <p
+                    class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                >
+                    Vous êtes maintenant propriétaire de votre application
+                    mobile sur-mesure disponible sur iOS et Android.
+                </p>
+            </div>
+        </div>
+    </section>
+    <ContactSection />
+</ThemeLayout>

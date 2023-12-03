@@ -1,0 +1,122 @@
+---
+import ContactSection from "../../components/ContactSection.astro";
+import ThemeLayout from "../../layouts/ThemeLayout.astro";
+import { Image } from "astro:assets";
+import UxUiDesign from "../../assets/ux-ui-designer-web-et-mobile-ticme.png";
+import Design from "../../assets/maquette-ux-ui-design-ticme.png";
+import Mailing from "../../assets/email-newsletter-ticme.png";
+---
+
+<ThemeLayout
+    title={"UX/UI Designer | Graphisme - Ticme"}
+    description={"Vous recherchez un UX/UI designer pour votre projet web ou un graphiste intégrateur pour vos campagne de communication. Ticme vous propose de prendre en charge votre communication, de la conception générale de l’interface de votre projet jusqu'à la stratégie de vos campagnes de communication."}
+>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-14 mx-auto">
+            <div class="flex flex-col w-full mb-10">
+                <div class="mb-6">
+                    <h2
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        UX/UI Designer | Graphisme
+                    </h2>
+                    <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                </div>
+                <p
+                    class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                >
+                    Vous recherchez un UX/UI designer pour votre projet web ou
+                    un graphiste intégrateur pour vos campagne de communication.
+                    Ticme vous propose de prendre en charge votre communication,
+                    de la conception générale de l’interface de votre projet
+                    jusqu'à la stratégie de vos campagnes de communication.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div
+                    class="p-10 bg-blue-200 dark:bg-blue-900 rounded-2xl h-max mx-auto"
+                >
+                    <Image
+                        class="mb-4"
+                        src={UxUiDesign}
+                        alt="ux ui designer web et mobile ticme"
+                    />
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h3
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        UX/UI designer Kezako ?
+                    </h3>
+                    <p
+                        class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        L'UX/UI designer est à la fois un créatif mais aussi un
+                        technicien et un programmeur. Il doit également avoir
+                        des connaissances en psychologie et en
+                        comportementalisme pour construire des interfaces et
+                        réaliser des designs de qualité en tenant compte de la
+                        cible et des nouvelles technologies : supports mobiles,
+                        navigation tactile, l’interactivité des zones d’action
+                        et l’optimisation des parcours utilisateurs ainsi que de
+                        la qualité des contenus pour créer l'émotion.
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10">
+                <div class="flex flex-col justify-center">
+                    <h3
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Identité visuelle
+                    </h3>
+                    <p
+                        class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        Faites nous confiance pour vous fournir et vous
+                        détailler tous les éléments graphiques de votre charte
+                        graphique et déclinez les sur tous les formats, supports
+                        et réseaux.
+                    </p>
+                </div>
+                <div
+                    class="p-10 bg-blue-200 dark:bg-blue-900 rounded-2xl h-max mx-auto"
+                >
+                    <Image
+                        class="mb-4"
+                        src={Design}
+                        alt="maquette ui ux design web ticme"
+                    />
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 my-10">
+                <div
+                    class="p-10 bg-blue-200 dark:bg-blue-900 rounded-2xl h-max mx-auto"
+                >
+                    <Image
+                        class="mb-4"
+                        src={Mailing}
+                        alt="email newsletter ticme"
+                    />
+                </div>
+                <div
+                    class="flex flex-col justify-center order-first md:order-none"
+                >
+                    <h3
+                        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                    >
+                        Emailing
+                    </h3>
+                    <p
+                        class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        Canal incontournable pour acquérir des clients, les
+                        fidéliser et générer des ventes. Confier nous la
+                        réalisations de vos campagne emailing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <ContactSection />
+</ThemeLayout>

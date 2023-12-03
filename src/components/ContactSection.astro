@@ -1,0 +1,56 @@
+---
+import SvgLocationPin from "./svg/SvgLocationPin.astro";
+import SvgMail from "./svg/SvgMail.astro";
+---
+
+<section class="bg-white dark:bg-slate-950 text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+            <div class="px-4">
+                <h2
+                    class="title-font text-3xl lg:text-6xl mb-8 font-bold bg-gradient-to-r from-blue-500 to-blue-400 inline-block text-transparent bg-clip-text"
+                >
+                    Créons de belles choses dès aujourd'hui !
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
+                <div
+                    class="flex flex-row items-start px-8 py-12 text-center mb-2 border border-blue-950 dark:border-gray-300 rounded-lg"
+                >
+                    <SvgLocationPin
+                        styles="w-12 h-12 stroke-blue-950 dark:stroke-gray-300"
+                    />
+                    <div class="flex-grow">
+                        <h2
+                            class="text-blue-950 dark:text-gray-300 text-lg title-font font-medium mb-3"
+                        >
+                            Coordonées
+                        </h2>
+                        <p
+                            class="text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                        >
+                            19260 Treignac
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-row items-start px-8 py-12 text-center mb-2 rounded-lg shadow-2xl"
+                >
+                    <SvgMail />
+                    <div class="flex-grow">
+                        <h2
+                            class="text-blue-950 dark:text-gray-300 text-lg title-font font-medium mb-3"
+                        >
+                            Envoyez-moi un e-mail
+                        </h2>
+                        <p
+                            class="text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                        >
+                            hello@ticme.fr
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

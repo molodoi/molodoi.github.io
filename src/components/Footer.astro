@@ -1,0 +1,42 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import SocialsLink from "./SocialsLink.astro";
+import SvgTopBtn from "./svg/SvgTopBtn.astro";
+const today = new Date();
+---
+
+<footer class="bg-blue-50 dark:bg-slate-950 text-gray-600 body-font mt-auto">
+    <div
+        class="container mx-auto px-4 py-8 flex items-center sm:flex-row flex-col"
+    >
+        <p
+            class="text-sm text-gray-500 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+        >
+            <HeaderLink
+                href="/mentions-legales"
+                class="mr-1 text-gray-500 hover:text-blue-600 transition-colors ease-in-out"
+            >
+                Mentions légales
+            </HeaderLink>
+            <HeaderLink
+                href="/conditions-generales-de-vente"
+                class="mr-1 text-gray-500 hover:text-blue-600 transition-colors ease-in-out"
+            >
+                C.G.V
+            </HeaderLink>
+
+            &copy; {today.getFullYear()}. All rights reserved — Ticme.fr
+        </p>
+        <span
+            class="inline-flex items-center sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start order-first md:order-none"
+        >
+            <SocialsLink />
+            <HeaderLink
+                href="#top"
+                class="inline-flex items-center sm:mt-0 mt-4 mr-5 hover:text-gray-900"
+            >
+                <SvgTopBtn />
+            </HeaderLink>
+        </span>
+    </div>
+</footer>

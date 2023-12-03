@@ -1,0 +1,208 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import SvgWebsite from "./svg/SvgWebsite.astro";
+import SvgEcommerce from "./svg/SvgEcommerce.astro";
+import SvgWebapp from "./svg/SvgWebapp.astro";
+import SvgMobile from "./svg/SvgMobile.astro";
+import SvgHosting from "./svg/SvgHosting.astro";
+import SvgUi from "./svg/SvgUi.astro";
+---
+
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-12 mx-auto">
+        <div class="flex flex-col w-full mb-10">
+            <div class="mb-6">
+                <h2
+                    class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                >
+                    Services
+                </h2>
+                <div class="h-1 w-20 bg-blue-500 rounded"></div>
+            </div>
+            <p
+                class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+            >
+                Je vous accompagne dans la conception, le développement,
+                l'hébergement et la maintenance de vos projets web.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div
+                class="flex flex-col items-center px-8 py-12 text-center mb-2 border border-blue-950 dark:border-gray-300 rounded-lg"
+            >
+                <div
+                    class="w-20 h-20 inline-flex items-center justify-center rounded-full mb-5 flex-shrink-0"
+                >
+                    <SvgWebsite />
+                </div>
+                <div class="flex-grow">
+                    <h2
+                        class="text-blue-950 dark:text-gray-300 text-lg title-font font-medium mb-3"
+                    >
+                        Sites web
+                    </h2>
+                    <p
+                        class="text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        Je crée des sites vitrines et des sites institutionnels
+                        sur-mesure ou basé sur des solutions CMS open source du
+                        type WordPress, Drupal et plus moderne encore..
+                    </p>
+                    <HeaderLink
+                        href="/services/creation-de-sites-web"
+                        class="inline-flex items-center font-light py-2 px-6 mt-5 text-blue-950 border border-blue-950 dark:text-gray-300 dark:border-gray-300 hover:text-blue-600 hover:border-blue-600 dark:hover:text-blue-600 dark:hover:border-blue-600 rounded-xl text-lg focus:outline-none hover:shadow-lg ease-in duration-100"
+                    >
+                        <span>Plus d'infos</span>
+                    </HeaderLink>
+                </div>
+            </div>
+            <div
+                class="flex flex-col items-center px-8 py-12 text-center mb-2 border border-blue-950 dark:border-gray-300 rounded-lg"
+            >
+                <div
+                    class="w-20 h-20 inline-flex items-center justify-center rounded-full mb-5 flex-shrink-0"
+                >
+                    <SvgEcommerce />
+                </div>
+                <div class="flex-grow">
+                    <h2
+                        class="text-blue-950 dark:text-gray-300 text-lg title-font font-medium mb-3"
+                    >
+                        Sites e-commerce
+                    </h2>
+                    <p
+                        class="text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        Je crée des plateformes e-commerce haut-de-gamme et
+                        performantes à l’aide des solutions CMS Woocommerce et
+                        d'autres plus récente et plus moderne encore...
+                    </p>
+                    <HeaderLink
+                        href="/services/creation-de-sites-ecommerce"
+                        class="inline-flex items-center font-light py-2 px-6 mt-5 text-blue-950 border border-blue-950 dark:text-gray-300 dark:border-gray-300 hover:text-blue-600 hover:border-blue-600 dark:hover:text-blue-600 dark:hover:border-blue-600 rounded-xl text-lg focus:outline-none hover:shadow-lg ease-in duration-100"
+                    >
+                        Plus d'infos
+                    </HeaderLink>
+                </div>
+            </div>
+            <div
+                class="flex flex-col items-center px-8 py-12 text-center mb-2 border border-blue-950 dark:border-gray-300 rounded-lg"
+            >
+                <div
+                    class="w-20 h-20 inline-flex items-center justify-center rounded-full mb-5 flex-shrink-0"
+                >
+                    <SvgWebapp />
+                </div>
+                <div class="flex-grow">
+                    <h2
+                        class="text-blue-950 dark:text-gray-300 text-lg title-font font-medium mb-3"
+                    >
+                        Applications web
+                    </h2>
+                    <p
+                        class="text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        J'étudie et développe vos applications web sur-mesure
+                        centrées sur vos besoins à l'aide des principaux
+                        frameworks PHP Laravel/Symfony et Javascript React/Next,
+                        Vue/Nuxt..
+                    </p>
+                    <HeaderLink
+                        href="/services/creation-d-application-web"
+                        class="inline-flex items-center font-light py-2 px-6 mt-5 text-blue-950 border border-blue-950 dark:text-gray-300 dark:border-gray-300 hover:text-blue-600 hover:border-blue-600 dark:hover:text-blue-600 dark:hover:border-blue-600 rounded-xl text-lg focus:outline-none hover:shadow-lg ease-in duration-100"
+                    >
+                        Plus d'infos
+                    </HeaderLink>
+                </div>
+            </div>
+            <div
+                class="flex flex-col items-center px-8 py-12 text-center mb-2 border border-blue-950 dark:border-gray-300 rounded-lg"
+            >
+                <div
+                    class="w-20 h-20 inline-flex items-center justify-center rounded-full mb-5 flex-shrink-0"
+                >
+                    <SvgMobile />
+                </div>
+                <div class="flex-grow">
+                    <h2
+                        class="text-blue-950 dark:text-gray-300 text-lg title-font font-medium mb-3"
+                    >
+                        Applications mobile
+                    </h2>
+                    <p
+                        class="text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        J'étudie et développe vos applications mobile sur-mesure
+                        centrées sur les besoins de vos utilisateurs à l'aide du
+                        framework mobile ReactNative/Expo.
+                    </p>
+                    <HeaderLink
+                        href="/services/creation-application-mobile"
+                        class="inline-flex items-center font-light py-2 px-6 mt-5 text-blue-950 border border-blue-950 dark:text-gray-300 dark:border-gray-300 hover:text-blue-600 hover:border-blue-600 dark:hover:text-blue-600 dark:hover:border-blue-600 rounded-xl text-lg focus:outline-none hover:shadow-lg ease-in duration-100"
+                    >
+                        <span>Plus d'infos</span>
+                    </HeaderLink>
+                </div>
+            </div>
+            <div
+                class="flex flex-col items-center px-8 py-12 text-center mb-2 border border-blue-950 dark:border-gray-300 rounded-lg"
+            >
+                <div
+                    class="w-20 h-20 inline-flex items-center justify-center rounded-full mb-5 flex-shrink-0"
+                >
+                    <SvgUi />
+                </div>
+                <div class="flex-grow">
+                    <h2
+                        class="text-blue-950 dark:text-gray-300 text-lg title-font font-medium mb-3"
+                    >
+                        UX/UI Designer | Graphisme
+                    </h2>
+                    <p
+                        class="text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        Web design, interface utilisateur, emailing ou encore
+                        logo, brochure, flyer et affiche, je réponds à tous vos
+                        besoins en matière de communications.
+                    </p>
+                    <HeaderLink
+                        href="/services/ux-ui-designer-graphisme"
+                        class="inline-flex items-center font-light py-2 px-6 mt-5 text-blue-950 border border-blue-950 dark:text-gray-300 dark:border-gray-300 hover:text-blue-600 hover:border-blue-600 dark:hover:text-blue-600 dark:hover:border-blue-600 rounded-xl text-lg focus:outline-none hover:shadow-lg ease-in duration-100"
+                    >
+                        <span>Plus d'infos</span>
+                    </HeaderLink>
+                </div>
+            </div>
+            <div
+                class="flex flex-col items-center px-8 py-12 text-center mb-2 border border-blue-950 dark:border-gray-300 rounded-lg"
+            >
+                <div
+                    class="w-20 h-20 inline-flex items-center justify-center rounded-full mb-5 flex-shrink-0"
+                >
+                    <SvgHosting />
+                </div>
+                <div class="flex-grow">
+                    <h2
+                        class="text-blue-950 dark:text-gray-300 text-lg title-font font-medium mb-3"
+                    >
+                        Hébergement | Maintenance
+                    </h2>
+                    <p
+                        class="text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                    >
+                        Je propose 3 types de contrat de maintenance, de la
+                        simple installation, à la configuration, jusque la
+                        gestion complète de l'hébergement de votre projet.
+                    </p>
+                    <HeaderLink
+                        href="/services/hebergement-et-maintenance"
+                        class="inline-flex items-center font-light py-2 px-6 mt-5 text-blue-950 border border-blue-950 dark:text-gray-300 dark:border-gray-300 hover:text-blue-600 hover:border-blue-600 dark:hover:text-blue-600 dark:hover:border-blue-600 rounded-xl text-lg focus:outline-none hover:shadow-lg ease-in duration-100"
+                    >
+                        <span>Plus d'infos</span>
+                    </HeaderLink>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

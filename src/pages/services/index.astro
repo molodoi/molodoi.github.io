@@ -1,0 +1,22 @@
+---
+import { getCollection } from "astro:content";
+import ThemeLayout from "../../layouts/ThemeLayout.astro";
+import SvgEcommerce from "../../components/svg/SvgEcommerce.astro";
+import SvgHosting from "../../components/svg/SvgHosting.astro";
+import SvgMobile from "../../components/svg/SvgMobile.astro";
+import SvgUi from "../../components/svg/SvgUi.astro";
+import SvgWebapp from "../../components/svg/SvgWebapp.astro";
+import SvgWebsite from "../../components/svg/SvgWebsite.astro";
+import ServicesSection from "../../components/ServicesSection.astro";
+
+const posts = (await getCollection("services")).sort(
+    (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
+---
+
+<ThemeLayout
+    title={"Mes services - Ticme"}
+    description={"Je vous accompagne dans la conception, le développement, l'hébergement et la maintenance de vos projets web."}
+>
+    <ServicesSection />
+</ThemeLayout>

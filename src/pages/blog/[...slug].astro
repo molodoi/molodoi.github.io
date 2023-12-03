@@ -1,0 +1,55 @@
+---
+import { CollectionEntry, getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+import { Image } from "astro:assets";
+import ThemeLayout from "../../layouts/ThemeLayout.astro";
+export async function getStaticPaths() {
+    const posts = await getCollection("blog");
+    return posts.map((post) => ({
+        params: { slug: post.slug },
+        props: post,
+    }));
+}
+type Props = CollectionEntry<"blog">;
+
+const post = Astro.props;
+const { Content } = await post.render();
+---
+
+<ThemeLayout {...post.data}>
+    <div class="container mx-auto p-5">
+        <div class="w-full mx-auto">
+            <div class="flex flex-col sm:flex-row mt-10">
+                <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                    <div
+                        class="flex flex-col items-center text-center justify-center"
+                    >
+                        <p
+                            class="text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                        >
+                            {post.data.category}
+                        </p>
+                        <div class="w-12 h-1 bg-blue-950 rounded m-4"></div>
+                        <p
+                            class="text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                        >
+                            <FormattedDate date={post.data.pubDate} />
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 dark:border-gray-600 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left prose max-w-max text-lg font-light leading-loose dark:prose-invert"
+                >
+                    <Image
+                        alt="content"
+                        class="object-cover object-center rounded-lg h-[300px] w-full"
+                        src={post.data.heroImage}
+                    />
+                    <h1>{post.data.title}</h1>
+                    <Content />
+                </div>
+            </div>
+        </div>
+    </div>
+</ThemeLayout>
+<style></style>
