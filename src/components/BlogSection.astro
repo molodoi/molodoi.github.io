@@ -1,13 +1,11 @@
 ---
-import { getCollection } from "astro:content";
-import FormattedDate from "./FormattedDate.astro";
 import HeaderLink from "../components/HeaderLink.astro";
 import SvgAddCircle from "./svg/SvgAddCircle.astro";
 import { Image } from "astro:assets";
 
-const posts = (await getCollection("blog")).sort(
-    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+import Nextjs from "../assets/next-js.jpg";
+import Laravel from "../assets/laravel-cheat-sheet.jpg";
+import Symfony from "../assets/symfony-cheat-sheet.jpg";
 ---
 
 <section class="text-gray-600 body-font overflow-hidden">
@@ -30,42 +28,132 @@ const posts = (await getCollection("blog")).sort(
             </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {
-                posts.splice(0, 3).map((post) => (
-                    <>
-                        <HeaderLink
-                            href={`/blog/${post.slug}/`}
-                            class="group min-h-[450px]"
+            <a
+                href="/blog/next-cheat-sheet/"
+                class="group min-h-[450px]"
+                data-astro-cid-eimmu3lg=""
+            >
+                <div>
+                    <div
+                        class="bg-slate-200 p-8 rounded-lg mb-4 group-hover:hover:shadow-lg transition-transform group-hover:-translate-y-2 will-change-transform ease-in-out duration-200"
+                    >
+                        <Image
+                            src={Nextjs}
+                            alt="Next Cheat Sheet"
+                            class="rounded-lg h-[250px] w-full object-cover"
+                        />
+                    </div>
+                    <div>
+                        <span
+                            class="inline-block py-1 px-2 mb-2 rounded bg-blue-50 text-blue-500 dark:bg-transparent dark:border dark:border-blue-800 text-xs font-medium tracking-widest"
                         >
-                            <div>
-                                <div class="bg-slate-200 p-8 rounded-lg mb-4 group-hover:hover:shadow-lg  transition-transform group-hover:-translate-y-2 will-change-transform ease-in-out duration-200">
-                                    <Image
-                                        src={post.data.heroImage}
-                                        alt={post.data.title}
-                                        class="rounded-lg h-[250px] w-full object-cover"
-                                    />
-                                </div>
-                                <div>
-                                    <span class="inline-block py-1 px-2 mb-2 rounded bg-blue-50 text-blue-500 dark:bg-transparent dark:border dark:border-blue-800 text-xs font-medium tracking-widest">
-                                        {post.data.category}
-                                    </span>
-                                    <span class="inline-block py-1 px-2 mb-2 rounded bg-blue-50 text-blue-500 dark:bg-transparent dark:border dark:border-blue-800 text-xs font-medium tracking-widest">
-                                        <FormattedDate
-                                            date={post.data.pubDate}
-                                        />
-                                    </span>
-                                    <h2 class="text-xl uppercase text-blue-950 hover:text-blue-600 group-hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-600 transition-colors ease-in-out">
-                                        {post.data.title}
-                                    </h2>
-                                    <p class="text-lg font-light leading-loose text-blue-950 dark:text-gray-300 ">
-                                        {post.data.description}
-                                    </p>
-                                </div>
-                            </div>
-                        </HeaderLink>
-                    </>
-                ))
-            }
+                            News
+                        </span>
+                        <span
+                            class="inline-block py-1 px-2 mb-2 rounded bg-blue-50 text-blue-500 dark:bg-transparent dark:border dark:border-blue-800 text-xs font-medium tracking-widest"
+                        >
+                            <time datetime="2023-12-01T00:00:00.000Z">
+                                1 déc. 2023
+                            </time>
+                        </span>
+                        <h2
+                            class="text-xl uppercase text-blue-950 hover:text-blue-600 group-hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-600 transition-colors ease-in-out"
+                        >
+                            Next Cheat Sheet
+                        </h2>
+                        <p
+                            class="text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                        >
+                            Settings, packages, ressources, contents and more -
+                            Next.js.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a
+                href="/blog/laravel-cheat-sheet/"
+                class="group min-h-[450px]"
+                data-astro-cid-eimmu3lg=""
+            >
+                <div>
+                    <div
+                        class="bg-slate-200 p-8 rounded-lg mb-4 group-hover:hover:shadow-lg transition-transform group-hover:-translate-y-2 will-change-transform ease-in-out duration-200"
+                    >
+                        <Image
+                            src={Laravel}
+                            alt="Laravel Cheat Sheet"
+                            class="rounded-lg h-[250px] w-full object-cover"
+                        />
+                    </div>
+                    <div>
+                        <span
+                            class="inline-block py-1 px-2 mb-2 rounded bg-blue-50 text-blue-500 dark:bg-transparent dark:border dark:border-blue-800 text-xs font-medium tracking-widest"
+                        >
+                            News
+                        </span>
+                        <span
+                            class="inline-block py-1 px-2 mb-2 rounded bg-blue-50 text-blue-500 dark:bg-transparent dark:border dark:border-blue-800 text-xs font-medium tracking-widest"
+                        >
+                            <time datetime="2023-11-30T00:00:00.000Z">
+                                30 nov. 2023
+                            </time>
+                        </span>
+                        <h2
+                            class="text-xl uppercase text-blue-950 hover:text-blue-600 group-hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-600 transition-colors ease-in-out"
+                        >
+                            Laravel Cheat Sheet
+                        </h2>
+                        <p
+                            class="text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                        >
+                            Settings, packages, ressources, contents and more -
+                            Laravel.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a
+                href="/blog/symfony-cheat-sheet/"
+                class="group min-h-[450px]"
+                data-astro-cid-eimmu3lg=""
+            >
+                <div>
+                    <div
+                        class="bg-slate-200 p-8 rounded-lg mb-4 group-hover:hover:shadow-lg transition-transform group-hover:-translate-y-2 will-change-transform ease-in-out duration-200"
+                    >
+                        <Image
+                            src={Symfony}
+                            alt="Symfony Cheat Sheet"
+                            class="rounded-lg h-[250px] w-full object-cover"
+                        />
+                    </div>
+                    <div>
+                        <span
+                            class="inline-block py-1 px-2 mb-2 rounded bg-blue-50 text-blue-500 dark:bg-transparent dark:border dark:border-blue-800 text-xs font-medium tracking-widest"
+                        >
+                            News
+                        </span>
+                        <span
+                            class="inline-block py-1 px-2 mb-2 rounded bg-blue-50 text-blue-500 dark:bg-transparent dark:border dark:border-blue-800 text-xs font-medium tracking-widest"
+                        >
+                            <time datetime="2023-11-29T00:00:00.000Z">
+                                29 nov. 2023
+                            </time>
+                        </span>
+                        <h2
+                            class="text-xl uppercase text-blue-950 hover:text-blue-600 group-hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-600 transition-colors ease-in-out"
+                        >
+                            Symfony Cheat Sheet
+                        </h2>
+                        <p
+                            class="text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                        >
+                            Settings, packages, ressources, contents and more -
+                            Symfony.
+                        </p>
+                    </div>
+                </div>
+            </a>
         </div>
         <div class="w-full flex flex-col items-center my-4 pt-4">
             <HeaderLink
