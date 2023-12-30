@@ -5,14 +5,15 @@ import SvgDownload from "./svg/SvgDownload.astro";
 import SvgInfoCircle from "./svg/SvgInfoCircle.astro";
 import { Image } from "astro:assets";
 import Me from "../assets/me.jpg";
+import Cv from "../assets/cv-lamerant-matthieu.pdf";
 ---
 
 <section
     id="hello"
-    class="bg-blue-50 dark:bg-slate-950 text-gray-600 body-font relative"
+    class="bg-blue-50 dark:bg-slate-950 text-gray-600 body-font relative mt-10"
 >
     <div
-        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+        class="container mx-auto flex px-5 py-5 md:py-24 md:flex-row flex-col items-center"
     >
         <div
             class="order-last md:order-first md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
@@ -23,7 +24,7 @@ import Me from "../assets/me.jpg";
                 Hey there! I'm -
             </div>
             <h1
-                class="title-font text-6xl mb-4 font-bold bg-gradient-to-r from-blue-500 to-blue-400 inline-block text-transparent bg-clip-text"
+                class="title-font text-4xl md:text-6xl mb-4 font-bold bg-gradient-to-r from-blue-500 to-blue-400 inline-block text-transparent bg-clip-text"
             >
                 Matthieu Lamerant
             </h1>
@@ -41,7 +42,8 @@ import Me from "../assets/me.jpg";
                     <SvgInfoCircle />
                 </HeaderLink>
                 <HeaderLink
-                    href="/about"
+                    href={Cv}
+                    target="_blank"
                     class="inline-flex items-center font-light text-lg text-gray-900 border-gray-900 dark:text-gray-300 border dark:border-gray-300 py-2 px-6 rounded-xl focus:outline-none hover:text-gray-950 hover:border-gray-950 hover:shadow-lg ease-in-out duration-100"
                 >
                     <span>Download CV</span>

@@ -3,21 +3,34 @@ import ExpSection from "../components/ExpSection.astro";
 import ThemeLayout from "../layouts/ThemeLayout.astro";
 import { Image } from "astro:assets";
 import Me from "../assets/me.jpg";
+import SkillsSection from "../components/SkillsSection.astro";
 ---
 
 <ThemeLayout
     title={"A propos de Ticme"}
     description={"Un expert pour prendre soin de vos projets web PHP (Laravel/Symfony), Javascript (React, Vue, Angular), Mobile (React Native), CMS (Wordpress et autres), e-commerce(WooCommerce)"}
 >
+    <div class="container px-5 pt-12 mx-auto">
+        <div class="flex flex-col w-full mb-2">
+            <div class="mb-6">
+                <h2
+                    class="sm:text-3xl text-2xl font-medium title-font mb-2 text-blue-500 uppercase"
+                >
+                    A propos
+                </h2>
+                <div class="h-1 w-20 bg-blue-500 rounded"></div>
+            </div>
+        </div>
+    </div>
     <div class="container mx-auto p-5">
         <div class="w-full mx-auto">
             <div class="flex flex-col sm:flex-row mt-10">
                 <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                     <div
-                        class="w-32 h-32 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400"
+                        class="md:w-32 md:h-32 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400"
                     >
                         <Image
-                            class="object-cover object-center rounded-full border-4 border-sky-100 drop-shadow-lg dark:border-gray-400"
+                            class="object-cover object-center rounded-full border-4 border-sky-100 drop-shadow-lg dark:border-white"
                             alt="Lamerant Matthieu - Ticme.fr"
                             src={Me}
                         />
@@ -42,40 +55,62 @@ import Me from "../assets/me.jpg";
                     <p
                         class="text-justify w-full text-lg font-light leading-loose text-blue-950 dark:text-gray-100"
                     >
-                        Développeur Web, depuis 2008, je maîtrise et m'intéresse
-                        fortement à l'univers des frameworks CSS et outils
-                        d'intégration frontend mais aussi tout ce qui entoure
-                        l'écosystème du langage Javascript (Vanilla, Jquery,
-                        React, Vuejs, Angular, Nodejs) ainsi qu'aux Framework
-                        PHP (Laravel, Symfony et autres équivalents Javascript).
-                        J'utilise et m'intéresse aussi aux différentes solutions
-                        CMS (Wordpress, Drupal) et e-commerce (Woocommerce).
-                        <br />
-                        <br />
-                        Passionné, polyvalent, autodidacte, plusieurs expériences
-                        significatives en entreprise au sein du groupe Go&Live, d'IBM
-                        CIC Lille, d'OVH ou tout simplement au sein de ma propre
-                        petite entreprise Ticme.fr, je m’implique dans les projets,
-                        veille et reste attentif aux évolutions en matière de technologies
-                        afin de répondre aux besoins. Développement sur mesure, intégration
-                        CMS, gestion de projet, SEO et référencement, je peaufine
-                        chaque jour de nouvelles techniques tant que faire se peut.
-                        Je m’adapte aux langages et techniques de développement pour
-                        réaliser des projets, je l'espère, chaque fois meilleurs.
+                        Développeur Web depuis 2008, je maîtrise et m'intéresse
+                        fortement à tout ce qui entoure l'univers des Frameworks
+                        PHP (Laravel, Symfony) mais aussi à tout ce qui gravite
+                        autour l'écosystème Javascript (React, Next, React
+                        Native, Vue, Nest) et intégration front end HTML/CSS
+                        (Sass Flexbox, Grid, Bootstrap, Tailwind et autres
+                        librairies de composants). En tant que professionnel,
+                        j'ai une expérience pratique des méthodologies Agile,
+                        notamment Scrum et Kanban (essentiellement sous Gitlab)
+                        mais aussi concernant la partie testing (PHPUnit et
+                        autres librairies de testing), intégration et
+                        déploiement continu (Gitlab CI/CD, Github Actions) ou de
+                        la virtualisation de mes environnements (Docker,
+                        docker-compose, Dockerfile ou simplement Caddy, Sail ou
+                        Lando).
                         <br />
                         <br />
                         Ticme est une micro agence web spécialisée dans la conception
-                        de sites internet. Je couvre un large panel de services informatiques
-                        : conception et développement d'application web, administration,
-                        ui/ux, conception de support de communication print, illustrations
-                        et formations. Je travaille avec diverses technologies comme
-                        PHP, JavaScript, WordPress et Drupal pour répondre aux besoins.
-                        Contactez-moi pour toute demande de devis ou projet web !
+                        de support de communication. Je couvre un large panel de
+                        services : conception et développement d'application web
+                        et mobile, design ui/ux, print, illustrations, administration
+                        et formations. Je travaille avec diverses technologies et
+                        languages pour pouvoir répondre à tous les besoins. Contactez-moi
+                        pour toute demande de devis ou projet !
                     </p>
+                    <div class="flex flex-col w-full my-2">
+                        <div class="mb-2">
+                            <h2
+                                class="sm:text-3xl text-2xl text-left font-medium title-font mb-2 text-blue-500 uppercase"
+                            >
+                                Skills
+                            </h2>
+                            <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                        </div>
+                        <p
+                            class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
+                        >
+                            Passionné, polyvalent, autodidacte, plusieurs
+                            expériences significatives en entreprise au sein du
+                            groupe Go&Live, d'IBM CIC Lille, d'OVH ou tout
+                            simplement au sein de ma propre petite entreprise
+                            Ticme.fr, je m’implique dans les projets, veille et
+                            reste attentif aux évolutions des languages et
+                            technologies afin de répondre aux besoins.
+                            Développement sur mesure, intégration CMS, gestion
+                            de projet, SEO et référencement, je peaufine chaque
+                            jour de nouvelles techniques tant que faire se peut.
+                            Je m’adapte aux langages et techniques de
+                            développement pour réaliser des projets rigoureux,
+                            je l'espère chaque fois meilleurs.
+                        </p>
+                    </div>
+                    <SkillsSection styles="px-0" pagis="about" />
+                    <ExpSection />
                 </div>
             </div>
         </div>
     </div>
-
-    <ExpSection />
 </ThemeLayout>
