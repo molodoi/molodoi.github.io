@@ -1,5 +1,5 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
+import Link from "./Link.astro";
 import SvgAddCircle from "./svg/SvgAddCircle.astro";
 import { Image } from "astro:assets";
 import Nacel from "../assets/homepage-nacel-sejours-linguistiques.jpg";
@@ -25,7 +25,7 @@ import Clc from "../assets/homepage-clc-club-langue-et-civilisation.jpg";
             </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <HeaderLink
+            <Link
                 href="/projects/nacel-sejours-linguistiques-internationaux/"
                 class="group h-[450px]"
             >
@@ -48,9 +48,9 @@ import Clc from "../assets/homepage-clc-club-langue-et-civilisation.jpg";
                 >
                     Séjours linguistiques internationaux.
                 </p>
-            </HeaderLink>
+            </Link>
 
-            <HeaderLink
+            <Link
                 href="/projects/club-langues-et-civilisations-sejours-linguistiques/"
                 class="group h-[450px]"
             >
@@ -73,16 +73,16 @@ import Clc from "../assets/homepage-clc-club-langue-et-civilisation.jpg";
                 >
                     Séjours linguistiques européens.
                 </p>
-            </HeaderLink>
+            </Link>
         </div>
         <div class="w-full flex flex-col items-center my-4">
-            <HeaderLink
+            <Link
                 href="/projects"
                 class="inline-flex items-center text-blue-500 border border-blue-500 py-2 px-6 rounded-xl text-lg focus:outline-none hover:text-blue-600 hover:border-blue-600 hover:shadow-lg ease-in duration-100 dark:text-blue-500"
             >
                 Plus de projets
                 <SvgAddCircle />
-            </HeaderLink>
+            </Link>
         </div>
         <div class="flex flex-row md:hidden">
             <span class="h-[1px] w-20 bg-gray-300 rounded mt-8 mx-auto"></span>

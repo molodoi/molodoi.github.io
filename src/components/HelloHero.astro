@@ -1,5 +1,5 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
+import Link from "./Link.astro";
 import SocialsLink from "./SocialsLink.astro";
 import SvgDownload from "./svg/SvgDownload.astro";
 import SvgInfoCircle from "./svg/SvgInfoCircle.astro";
@@ -34,21 +34,21 @@ import Cv from "../assets/cv-lamerant-matthieu.pdf";
                 Développeur Web PHP and more
             </p>
             <div class="mb-2">
-                <HeaderLink
+                <Link
                     href="/about"
                     class="inline-flex items-center text-blue-500 dark:text-blue-500 border border-blue-500 py-2 px-6 mb-2 mr-0 lg:mr-1 lg:mb-0 rounded-xl text-lg focus:outline-none hover:text-blue-600 hover:border-blue-600 hover:shadow-lg ease-in-out duration-100"
                 >
                     <span>A propos</span>
                     <SvgInfoCircle />
-                </HeaderLink>
-                <HeaderLink
+                </Link>
+                <Link
                     href={Cv}
                     target="_blank"
                     class="inline-flex items-center font-light text-lg text-gray-900 border-gray-900 dark:text-gray-300 border dark:border-gray-300 py-2 px-6 rounded-xl focus:outline-none hover:text-gray-950 hover:border-gray-950 hover:shadow-lg ease-in-out duration-100"
                 >
                     <span>Download CV</span>
                     <SvgDownload />
-                </HeaderLink>
+                </Link>
             </div>
             <SocialsLink />
         </div>

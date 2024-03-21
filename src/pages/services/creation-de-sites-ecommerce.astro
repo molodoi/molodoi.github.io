@@ -7,6 +7,7 @@ import UxUiDesign from "../../assets/maquette-ux-ui-design-ticme.png";
 import Development from "../../assets/developpement-de-site-ecommerce-ticme-expert-woocommerce.png";
 import Integration from "../../assets/integration-de-site-ecommerce-ticme-expert-woocommerce.png";
 import Livraison from "../../assets/livraison-projet-e-commerce-ticme-expert-e-commerce.png";
+import Link from "../../components/Link.astro";
 ---
 
 <ThemeLayout
@@ -202,6 +203,27 @@ import Livraison from "../../assets/livraison-projet-e-commerce-ticme-expert-e-c
                     (web&mobile) et surtout sécurisé.
                 </p>
             </div>
+            <Link
+                href="/services"
+                class="flex justify-end items-center my-5 font-bold text-gray-400 hover:text-blue-600 transition-colors ease-in-out"
+            >
+                Retour aux services
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="flex-shrink-0 mx-2 overflow-visible h-4 w-4 text-gray-400 dark:text-neutral-600 lucide lucide-undo-2"
+                    ><path d="M9 14 4 9l5-5"></path><path
+                        d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5v0a5.5 5.5 0 0 1-5.5 5.5H11"
+                    ></path></svg
+                >
+            </Link>
         </div>
     </section>
     <ContactSection />

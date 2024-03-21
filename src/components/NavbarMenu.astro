@@ -1,5 +1,5 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
+import Link from "./Link.astro";
 import ThemeIcon from "./ThemeIcon.astro";
 import { Image } from "astro:assets";
 import Logo from "../assets/flower-ticme.webp";
@@ -9,57 +9,57 @@ const today = new Date();
 <header id="top" class="text-gray-600 body-font">
     <div class="container mx-auto flex flex-row p-5 items-center">
         <div class="flex justify-between">
-            <HeaderLink href="/" class="mr-5 font-bold">
+            <Link href="/" class="mr-5 font-bold">
                 <Image
                     class="object-cover object-center w-12 h-12"
                     alt="Logo Ticme.fr"
                     src={Logo}
                 />
-            </HeaderLink>
+            </Link>
         </div>
         <nav
             class="hidden lg:inline-block md:ml-auto flex flex-wrap items-center text-base justify-center"
         >
             <ul class="flex flex-row list-none items-center">
                 <li>
-                    <HeaderLink
+                    <Link
                         href="/"
                         class="mr-5 font-bold text-gray-400 hover:text-blue-600 transition-colors ease-in-out"
                     >
                         Home
-                    </HeaderLink>
+                    </Link>
                 </li>
                 <li>
-                    <HeaderLink
+                    <Link
                         href="/about"
                         class="mr-5 font-bold text-gray-400 hover:text-blue-600 transition-colors ease-in-out"
                     >
                         A propos
-                    </HeaderLink>
+                    </Link>
                 </li>
                 <li>
-                    <HeaderLink
+                    <Link
                         href="/services"
                         class="mr-5 font-bold text-gray-400 hover:text-blue-600 transition-colors ease-in-out"
                     >
                         Services
-                    </HeaderLink>
+                    </Link>
                 </li>
                 <li>
-                    <HeaderLink
+                    <Link
                         href="/projects"
                         class="mr-5 font-bold text-gray-400 hover:text-blue-600 transition-colors ease-in-out"
                     >
                         Projets
-                    </HeaderLink>
+                    </Link>
                 </li>
                 <li>
-                    <HeaderLink
+                    <Link
                         href="/blog"
                         class="mr-5 font-bold text-gray-400 hover:text-blue-600 transition-colors ease-in-out"
                     >
                         Blog
-                    </HeaderLink>
+                    </Link>
                 </li>
                 <li><ThemeIcon /></li>
             </ul>
@@ -82,16 +82,16 @@ const today = new Date();
 <div class="navbar-menu relative z-50 hidden">
     <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
     <nav
-        class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+        class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-5 px-5 bg-white border-r overflow-y-auto"
     >
         <div class="flex items-center mb-8">
-            <HeaderLink href="/" class="mr-auto font-bold">
+            <Link href="/" class="mr-auto font-bold">
                 <Image
                     class="object-cover object-center w-12 h-12"
                     alt="Logo Ticme.fr"
                     src={Logo}
                 />
-            </HeaderLink>
+            </Link>
             <button class="navbar-close">
                 <svg
                     class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
@@ -111,44 +111,44 @@ const today = new Date();
         <div>
             <ul>
                 <li class="mb-1">
-                    <HeaderLink
+                    <Link
                         href="/"
                         class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                     >
                         Home
-                    </HeaderLink>
+                    </Link>
                 </li>
                 <li class="mb-1">
-                    <HeaderLink
+                    <Link
                         href="/about"
                         class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                     >
                         A propos
-                    </HeaderLink>
+                    </Link>
                 </li>
                 <li class="mb-1">
-                    <HeaderLink
+                    <Link
                         href="/services"
                         class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                     >
                         Services
-                    </HeaderLink>
+                    </Link>
                 </li>
                 <li class="mb-1">
-                    <HeaderLink
+                    <Link
                         href="/projects"
                         class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                     >
                         Projets
-                    </HeaderLink>
+                    </Link>
                 </li>
                 <li class="mb-1">
-                    <HeaderLink
+                    <Link
                         href="/blog"
                         class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                     >
                         Blog
-                    </HeaderLink>
+                    </Link>
                 </li>
             </ul>
         </div>

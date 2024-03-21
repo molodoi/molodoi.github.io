@@ -1,5 +1,5 @@
 ---
-import HeaderLink from "../components/HeaderLink.astro";
+import Link from "./Link.astro";
 import SvgAddCircle from "./svg/SvgAddCircle.astro";
 import { Image } from "astro:assets";
 
@@ -29,7 +29,7 @@ import Symfony from "../assets/symfony-cheat-sheet.jpg";
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <a
-                href="/blog/next-cheat-sheet/"
+                href="/blog/next-js/"
                 class="group min-h-[450px]"
                 data-astro-cid-eimmu3lg=""
             >
@@ -59,19 +59,18 @@ import Symfony from "../assets/symfony-cheat-sheet.jpg";
                         <h2
                             class="text-xl uppercase text-blue-950 hover:text-blue-600 group-hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-600 transition-colors ease-in-out"
                         >
-                            Next Cheat Sheet
+                            Next.js
                         </h2>
                         <p
                             class="text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
                         >
-                            Settings, packages, ressources, contents and more -
-                            Next.js.
+                            Révolution du développement Web.
                         </p>
                     </div>
                 </div>
             </a>
             <a
-                href="/blog/laravel-cheat-sheet/"
+                href="/blog/laravel/"
                 class="group min-h-[450px]"
                 data-astro-cid-eimmu3lg=""
             >
@@ -101,19 +100,18 @@ import Symfony from "../assets/symfony-cheat-sheet.jpg";
                         <h2
                             class="text-xl uppercase text-blue-950 hover:text-blue-600 group-hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-600 transition-colors ease-in-out"
                         >
-                            Laravel Cheat Sheet
+                            Laravel
                         </h2>
                         <p
                             class="text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
                         >
-                            Settings, packages, ressources, contents and more -
-                            Laravel.
+                            Simplicité et élégance.
                         </p>
                     </div>
                 </div>
             </a>
             <a
-                href="/blog/symfony-cheat-sheet/"
+                href="/blog/symfony/"
                 class="group min-h-[450px]"
                 data-astro-cid-eimmu3lg=""
             >
@@ -143,26 +141,25 @@ import Symfony from "../assets/symfony-cheat-sheet.jpg";
                         <h2
                             class="text-xl uppercase text-blue-950 hover:text-blue-600 group-hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-600 transition-colors ease-in-out"
                         >
-                            Symfony Cheat Sheet
+                            Symfony
                         </h2>
                         <p
                             class="text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
                         >
-                            Settings, packages, ressources, contents and more -
-                            Symfony.
+                            Rigueur et robustesse.
                         </p>
                     </div>
                 </div>
             </a>
         </div>
         <div class="w-full flex flex-col items-center my-4 pt-4">
-            <HeaderLink
+            <Link
                 href="/blog"
                 class="inline-flex items-center text-blue-500 border border-blue-500 py-2 px-6 rounded-xl text-lg focus:outline-none hover:text-blue-600 hover:border-blue-600 hover:shadow-lg ease-in duration-100 dark:text-blue-500"
             >
                 Plus d'articles
                 <SvgAddCircle />
-            </HeaderLink>
+            </Link>
         </div>
         <div class="flex flex-row md:hidden">
             <span class="h-[1px] w-20 bg-gray-300 rounded mt-8 mx-auto"></span>

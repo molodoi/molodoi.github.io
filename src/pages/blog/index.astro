@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
 import ThemeLayout from "../../layouts/ThemeLayout.astro";
-import HeaderLink from "../../components/HeaderLink.astro";
+import Link from "../../components/Link.astro";
 import { Image } from "astro:assets";
 
 const posts = (await getCollection("blog")).sort(
@@ -28,16 +28,14 @@ const posts = (await getCollection("blog")).sort(
                 <p
                     class="text-justify text-lg font-light leading-loose text-blue-950 dark:text-gray-300"
                 >
-                    Actualités, tutos et articles sur le développement web.
-                    Découvrez mes publications sur le front-end, le back-end, le
-                    design, l'UX et plus encore.
+                    Actualités et articles sur le développement web.
                 </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {
                     posts.map((post) => (
                         <>
-                            <HeaderLink
+                            <Link
                                 href={`/blog/${post.slug}/`}
                                 class="group min-h-[450px]"
                             >
@@ -66,7 +64,7 @@ const posts = (await getCollection("blog")).sort(
                                         </p>
                                     </div>
                                 </div>
-                            </HeaderLink>
+                            </Link>
                         </>
                     ))
                 }

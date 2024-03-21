@@ -1,6 +1,5 @@
 ---
 import ContactSection from "../../components/ContactSection.astro";
-import HeaderLink from "../../components/HeaderLink.astro";
 import ThemeLayout from "../../layouts/ThemeLayout.astro";
 import { Image } from "astro:assets";
 import AppMobile from "../../assets/creation-application-mobile-react-native-ticme.png";
@@ -8,6 +7,7 @@ import UxUiDesign from "../../assets/maquette-ux-ui-design-ticme.png";
 import Development from "../../assets/developpement-application-mobile-react-native-ticme.png";
 import Integration from "../../assets/integration-application-mobile-react-native-ticme.png";
 import Livraison from "../../assets/livraison-application-mobile-react-native-ticme.png";
+import Link from "../../components/Link.astro";
 ---
 
 <ThemeLayout
@@ -61,14 +61,14 @@ import Livraison from "../../assets/livraison-application-mobile-react-native-ti
                         <br />
                         React Native est utilisé dans des milliers d'applications,
                         mais il est probable que vous l'ayez déjà utilisé dans l'une
-                        de ces applications : <HeaderLink
+                        de ces applications : <Link
                             href="https://reactnative.dev/showcase"
                             target={`_blank`}
                             rel="noreferrer"
                             class="font-light text-blue-950 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-600 text-lg focus:outline-none ease-in duration-100"
                         >
                             https://reactnative.dev/showcase
-                        </HeaderLink>
+                        </Link>
                     </p>
                 </div>
             </div>
@@ -204,6 +204,27 @@ import Livraison from "../../assets/livraison-application-mobile-react-native-ti
                     mobile sur-mesure disponible sur iOS et Android.
                 </p>
             </div>
+            <Link
+                href="/services"
+                class="flex justify-end items-center my-5 font-bold text-gray-400 hover:text-blue-600 transition-colors ease-in-out"
+            >
+                Retour aux services
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="flex-shrink-0 mx-2 overflow-visible h-4 w-4 text-gray-400 dark:text-neutral-600 lucide lucide-undo-2"
+                    ><path d="M9 14 4 9l5-5"></path><path
+                        d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5v0a5.5 5.5 0 0 1-5.5 5.5H11"
+                    ></path></svg
+                >
+            </Link>
         </div>
     </section>
     <ContactSection />
