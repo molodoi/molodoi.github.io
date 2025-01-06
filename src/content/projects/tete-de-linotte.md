@@ -13,8 +13,8 @@ author: "Me"
 
 ## A propros de Tête de Linotte
 
-Tête de Linotte est un ensemble de micros crèches situées dans les Hauts de France.
+Tête de Linotte est un réseau de micro-crèches situées dans les Hauts-de-France.
 
 ### Stack technique
 
-Logo, supports de communication, formation, illustrations et création du thème et plugins Wordpress.
+Logo, supports de communication, animation, illustrations et création du thème et plugins Wordpress.
