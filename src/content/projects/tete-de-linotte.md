@@ -1,9 +1,9 @@
 ---
 title: "Tête de Linotte"
 description: "Micro-crèche des 0 à 3 ans."
-pubDate: "Nov 23 2023"
+pubDate: "Jan 2 2025"
 heroImage: "../../assets/homepage-tete-de-linotte.jpg"
-twBgColor: "bg-[#d0da29]"
+twBgColor: "bg-[#ee8688]"
 logoImage: "../../assets/logo-tete-de-linotte.jpg"
 category: "Projets"
 stack: "Un site propulsé par WordPress."
@@ -13,8 +13,8 @@ author: "Me"
 
 ## A propros de Tête de Linotte
 
-Tête de Linotte est une micro crèche situé à Bailleul dans le Nord près de Lille.
+Tête de Linotte est un ensemble de micros crèches situées dans les Hauts de France.
 
 ### Stack technique
 
-Logo, supports de communication, formation et création du thème et plugins Wordpress.
+Logo, supports de communication, formation, illustrations et création du thème et plugins Wordpress.
